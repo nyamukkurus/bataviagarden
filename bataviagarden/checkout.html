@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - BataviaGarden</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>BataviaGarden</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="products.html">Produk</a>
+            <a href="cart.html">Keranjang</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Checkout</h2>
+        
+        <div class="checkout-container">
+            <!-- Ringkasan Pesanan -->
+            <section id="order-summary">
+                <h3>Ringkasan Pesanan</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="checkout-items">
+                        <!-- Produk dari checkout.js -->
+                    </tbody>
+                </table>
+                <p><strong>Total Harga: </strong> Rp <span id="checkout-total">0</span></p>
+            </section>
+
+            <!-- Formulir Checkout -->
+            <section id="customer-info">
+                <h3>Data Penyewa</h3>
+                <form id="checkout-form">
+                    <div class="input-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">No HP:</label>
+                        <input type="tel" id="phone" placeholder="08123456789" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="address">Alamat:</label>
+                        <textarea id="address" placeholder="Masukkan alamat pengiriman" required></textarea>
+                    </div>
+
+                    <button type="submit" class="checkout-btn">Konfirmasi Pesanan</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/checkout.js"></script>
+</body>
+</html>
