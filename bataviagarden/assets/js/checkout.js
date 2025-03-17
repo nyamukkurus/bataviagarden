@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     displayCheckoutItems();
 // Inisialisasi EmailJS
 (function() {
-    emailjs.init('your_user_id');  // Ganti dengan User ID dari EmailJS
+    emailjs.init('service_ws2v1fl');  // Ganti dengan User ID dari EmailJS
 })();
 
 // Mengirim email ketika formulir dikirim
